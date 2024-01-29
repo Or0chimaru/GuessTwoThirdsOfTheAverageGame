@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "GuessTwoThirdsOfTheAverageGame_backend": {
+      "main": "src/GuessTwoThirdsOfTheAverageGame_backend/main.mo",
+      "type": "motoko"
+    },
+    "GuessTwoThirdsOfTheAverageGame_frontend": {
+      "dependencies": [
+        "GuessTwoThirdsOfTheAverageGame_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/GuessTwoThirdsOfTheAverageGame_frontend/src/index.html"
+      },
+      "source": [
+        "src/GuessTwoThirdsOfTheAverageGame_frontend/assets",
+        "dist/GuessTwoThirdsOfTheAverageGame_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
